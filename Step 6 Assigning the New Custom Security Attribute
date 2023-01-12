@@ -1,0 +1,8 @@
+{
+  "customSecurityAttributes": {
+    "Guest": {
+      "@@odata.type": "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+      "Sponsor": "@{outputs('Getting_the_Submitter_Display_Name')?['body/displayName']}"
+    }
+  }
+}
