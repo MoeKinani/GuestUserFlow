@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "@@odata.context": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "inviteRedeemUrl": {
+            "type": "string"
+        },
+        "invitedUserDisplayName": {
+            "type": "string"
+        },
+        "invitedUserType": {
+            "type": "string"
+        },
+        "invitedUserEmailAddress": {
+            "type": "string"
+        },
+        "sendInvitationMessage": {
+            "type": "boolean"
+        },
+        "resetRedemption": {
+            "type": "boolean"
+        },
+        "inviteRedirectUrl": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "invitedUserMessageInfo": {
+            "type": "object",
+            "properties": {
+                "messageLanguage": {},
+                "customizedMessageBody": {},
+                "ccRecipients": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "emailAddress": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {},
+                                    "address": {}
+                                }
+                            }
+                        },
+                        "required": [
+                            "emailAddress"
+                        ]
+                    }
+                }
+            }
+        },
+        "invitedUser": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
