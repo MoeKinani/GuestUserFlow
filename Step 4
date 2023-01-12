@@ -1,0 +1,20 @@
+# Step 4 in my blog Automate Guest Creation and add Sponsor attribute field via graph
+
+{
+  "invitedUserEmailAddress": "@{outputs('Get_response_details')?['body/r3d7f4536469e4e7e85cf360bec1de909']}",
+  "invitedUserDisplayName": "@{outputs('Get_response_details')?['body/r57dbc901c66845a18e0d0d22e25abe5c']}",
+  "inviteRedirectUrl": "https://account.activedirectory.windowsazure.com/?tenantid=fe6c8c4e-c1b7-4c16-9761-1382a2dc9c8e&login_hint=@{outputs('Get_response_details')?['body/r3d7f4536469e4e7e85cf360bec1de909']}",
+  "invitedUserMessageInfo": {
+    "messageLanguage": null,
+    "customizedMessageBody": "Please accept AMZTECHS Guest invitation, you will be able to access resources once completed",
+    "ccRecipients": [
+      {
+        "emailAddress": {
+          "name": "Moe Kinani",
+          "address": "moekinani@amztechs.com"
+        }
+      }
+    ]
+  },
+  "sendInvitationMessage": "True"
+}
